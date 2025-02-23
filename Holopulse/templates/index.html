@@ -1,0 +1,59 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}"/>
+    <title>HoloPulse.com</title>
+</head>
+<body>
+    <div>
+    <video autoplay muted loop class="video">
+        <source src="{% static 'background.mp4' %}" type="video/mp4">
+    </video>
+
+    <header class="header">
+        <h1 class="logo">HoloPulse</h1>
+
+        <nav class="navbar">
+            <a href="#" class="nav-link" id="home">Home<span class="info">Welcome to the future of healthcare with HoloPulse</span></a>
+            <a href="#" class="nav-link" id="about">About<span class="info">"At HoloPulse, we are pioneering the future of healthcare by integrating holographic technology into medical diagnostics and treatment. Our advanced system offers 3D imaging, virtual consultations, and AI-driven solutions to deliver personalized, efficient care. We are committed to transforming the way healthcare is delivered, ensuring that every patient receives the most accurate and innovative care possible."
+                This text can be added to your About section, providing a concise overview of your futuristic hospital.</span></a>
+            <a href="#" class="nav-link" id="services">Services<span class="info">"At HoloPulse, we offer cutting-edge healthcare services including holographic consultations, AI-powered diagnostics, 3D imaging for precise medical assessments, and virtual treatment rooms. Our advanced telemedicine platform enables seamless access to expert care from anywhere. With a focus on patient-centric solutions, we provide personalized treatments, continuous monitoring, and efficient healthcare delivery through innovative technology."
+                This text can be added to your Services section to highlight the advanced services your holographic hospital provides.</span></a>
+            <a href="#" class="nav-link" id="doctors">Doctors<span class="info">Md Sufiyan(Neurologist)<br>Akshith(Cardiologist)<br>Prathyusha(Gynocologist)<br>Prem sir(Dermotologist)<br>Jafer sir(Orthopedist)</span></a>
+            <a href="#" class="nav-link" id="contact">Contact<span class="info">Mail : 22311A6746@ds.sreenidhi.edu.in<br>Mobile : 1234567890</span></a>
+        </nav> 
+    </header>
+    <section class="Home">
+        <div class="homepage">
+            <h1>Futuristic !!</h1>
+            <h3>Welcome to HaloPulse</h3>
+            <p>Experience futuristic healthcare with holographic technology,<br> offering advanced diagnostics, 3D imaging, and virtual consultations for precise,efficient,<br> and patient-focused medical care. Transforming healthcare, today!</p>
+            <br>
+            <br>
+            <a href="{% url 'appointment' %}">
+                <button class="B" type="button" onclick="location.href=''">Book an Appointment</button>
+            </a>
+
+            <a href="{% url 'emergency' %}">
+            <button class="B" type="button">Emergency</button>
+            </a>
+            
+            <a href="{% url 'consultation' %}">
+            <button class="B" type="button">Consult Online</button>
+            </a>
+            
+            <a href="{% url 'order_medicine' %}" >
+            <button class="B" type="button">Buy Medicine</button>
+            </a>
+
+            <a href="{% url 'data_page' %}">
+                <button class="B">View Data</button>
+            </a>
+        </div>
+    </section>
+    </div>
+</body>
+</html>

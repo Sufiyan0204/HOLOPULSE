@@ -1,0 +1,29 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles1.css' %}"/>
+    <title>Book an Appointment</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">HoloPulse</h1>
+    </header>
+
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Consultation Request</h2>
+            <form method="post" class="consultation-form">
+                {% csrf_token %}
+                <div class="form-field">
+                    {{ form.as_p }}
+                </div>
+                <button class="submit-btn" type="submit">Submit Consultation</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

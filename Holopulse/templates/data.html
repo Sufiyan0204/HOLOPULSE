@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Page</title>
+    <link rel="stylesheet" href="{% static 'styles0.css' %}">
+</head>
+<body>
+    <h1>All Form Data</h1>
+
+    <div class="table-container">
+        <h2>APPOINTMENTS</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>DATE</th>
+                    <th>TIME</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in form1_data %}
+                    <tr>
+                        <td>{{ data.name }}</td>
+                        <td>{{ data.email }}</td>
+                        <td>{{ data.date }}</td>
+                        <td>{{ data.time }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container">
+        <h2>EMERGENCY</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>DISCRIPTION</th>
+                    <th>CONTACT</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in form2_data %}
+                    <tr>
+                        <td>{{ data.description}}</td>
+                        <td>{{ data.contact_number}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container">
+        <h2>CONSULTATION</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>QUERY</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in form3_data %}
+                    <tr>
+                        <td>{{ data.name }}</td>
+                        <td>{{ data.query }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container">
+        <h2>MedicineOrder</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>MEDICINE</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in form4_data %}
+                    <tr>
+                        <td>{{ data.name}}</td>
+                        <td>{{ data.medicine_details }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* General body and text styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #f1f5f8;  /* Light background for a softer feel */
+}
+
+h1, h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;  /* Adds space below the headings */
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Table container styling */
+.table-container {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;  /* White background to separate from page background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for elevation effect */
+}
+
+/* Table styling */
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;  /* Adds vertical space between rows */
+    font-size: 1.1em;  /* Slightly larger text for readability */
+}
+
+.data-table th, .data-table td {
+    padding: 16px 24px;  /* Increased padding for a more spacious look */
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;  /* Rounded corners for individual cells */
+}
+
+/* Header row styling */
+.data-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    border-top-left-radius: 8px;  /* Round top left and top right corners */
+    border-top-right-radius: 8px;
+}
+
+/* Row hover effects for better interactivity */
+.data-table tbody tr:hover {
+    background-color: #f0f8ff;  /* Soft light blue for hover effect */
+    cursor: pointer;
+}
+
+/* Zebra striping for alternating rows */
+.data-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Light gray for even rows */
+}
+
+/* Button styling */
+.btn {
+    padding: 12px 24px;
+    background-color: #007bff;  /* Vibrant blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;  /* Rounded button */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;  /* Smooth color transition */
+}
+
+.btn:hover {
+    background-color: #0056b3;  /* Darker blue when hovered */
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    .data-table th, .data-table td {
+        padding: 12px;  /* Reduce padding on small screens */
+    }
+
+    .data-table {
+        font-size: 1em;  /* Slightly smaller text for better fit */
+    }
+
+    .btn {
+        font-size: 14px;  /* Smaller button text for smaller screens */
+        padding: 10px 20px;
+    }
+}

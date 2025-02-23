@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.nav-link {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #d9534f; 
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav-link:hover .info {
+    display: block;
+}
+
+body{
+    background: #081b29;
+    color: #ededed;
+}
+.logo{
+    font-size: 55px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navebar a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navebar a:hover,
+.navebar a.active {
+    color: white;
+}
+
+.Home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.homepage h1{
+    font-size: 56px;
+    color: #00abf0;
+    font-weight: 700;
+    margin-top: 170px;
+}
+
+.homepage p{
+    font-size: 16px;
+}
+
+.B{
+    margin: 0px 50px 0px 50px;
+    padding: 25px 20px 50px 20px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+}
+video {
+    width: 100%;
+}
+
+.video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;    
+}
+
+button {
+    border-radius: 10%;
+    height: 5px;
+    font-size: 17px;
+}
+
+.B:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease-in-out; 
+  }
